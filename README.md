@@ -119,4 +119,32 @@ Yorum Ekleme: Kullanıcılar, platformdaki kitaplar için yorum yapabilirler.
 
 <img width="371" alt="Screenshot 2024-05-04 at 23 42 44" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/c49eb446-1c46-4747-a19c-000d788d47e8">
 
-Proje 16
+Proje 16 Film ve Dizi İzleme Servisi
+
+Bu, filmleri ve dizileri yönetmek ve yayınlamak için Python ve PyQt5 kullanılarak geliştirilmiş basit bir masaüstü uygulamasıdır. Kullanıcı kimlik doğrulaması, filmleri veritabanına ekleme ve mevcut filmleri listeleme gibi özellikler içerir.
+
+<img width="593" alt="Screenshot 2024-05-05 at 21 49 07" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/172759f0-2ba0-4584-9d05-65d7ec25f1cd">
+
+Proje 17 Eğitim Materyali Paylaşım Platformu
+
+Bu, derslerin oluşturulması ve bu derslere ait materyallerin eklenmesini sağlayan basit bir masaüstü uygulamasıdır. Python ve PyQt5 kullanılarak geliştirilmiştir.
+
+<img width="592" alt="Screenshot 2024-05-05 at 21 51 13" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/a4a66189-8ad6-414d-912e-589369970508">
+
+Proje 18 Tarihçi - Tarihi Olaylar Veritabanı
+
+Bu, tarihi olayların, şahsiyetlerin ve dönemlerin kaydedilmesini sağlayan basit bir masaüstü uygulamasıdır. Python ve PyQt5 kullanılarak geliştirilmiştir.
+
+<img width="489" alt="Screenshot 2024-05-05 at 21 52 07" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/8d5b282f-31c5-4cf8-a7f0-3cf6cfe1be81">
+
+Proje 19 Restoran Sipariş ve Yönetim Sistemi
+
+Bu, bir restoranın sipariş alımını ve ürün yönetimini sağlayan basit bir masaüstü uygulamasıdır. Python ve PyQt5 kullanılarak geliştirilmiştir.
+
+<img width="389" alt="Screenshot 2024-05-05 at 21 53 59" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/7897377e-fdef-42e9-a6b4-a01be23cc35b">
+
+Proje 20 Video Oyun Koleksiyonu Yönetimi
+
+Bu, video oyunları ve oyuncuların koleksiyonlarını yönetmek için basit bir masaüstü uygulamasıdır. Python ve PyQt5 kullanılarak geliştirilmiştir.
+
+<img width="294" alt="Screenshot 2024-05-05 at 21 57 33" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/44fbd842-0b1d-4578-89f7-75e069bff115">
