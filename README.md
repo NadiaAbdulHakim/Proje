@@ -35,8 +35,9 @@ Etkinlik Oluşturma: Yöneticiler etkinlik adı, tarihi ve mekanı gibi bilgiler
 Bilet Satışı: Kullanıcılar bilet numarası ve etkinlik bilgisiyle bilet satın alabilirler.
 Hata Kontrolü: Kullanıcılar ve yöneticiler tüm gerekli alanları doldurmadıklarında uyarı alırlar.
 
-<img width="289" alt="Screenshot 2024-05-04 at 23 43 24" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/715057bd-250e-4a63-8e40-142f6f2c3b10">
+<img width="293" alt="Screenshot 2024-05-06 at 23 04 31" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/db06b689-f7dc-4049-bd5b-74d6af2c80e1">
 
+<img width="283" alt="Screenshot 2024-05-06 at 23 05 18" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/243c2ddd-59c5-48d3-a1fe-6fd74e10b34f">
 
 Proje 14 İş Takip ve Yönetim Sistemi
 
