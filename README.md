@@ -20,7 +20,9 @@ Sağlık Kaydı Ekleme: Kan basıncı, nabız, kan şekeri gibi sağlık ölçü
 Egzersiz Bilgileri Ekleme: Yaptığınız egzersizlerin adını, süresini ve tekrar sayısını belirterek egzersiz bilgilerini kaydedebilirsiniz.
 Rapor Oluşturma: Girdiğiniz bilgiler temelinde rapor oluşturabilir ve kaydedebilirsiniz.
 
-<img width="492" alt="Screenshot 2024-05-04 at 23 41 15" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/d423bad8-4e2a-47a3-bcfd-2db06f5a54a9">
+<img width="396" alt="Screenshot 2024-05-06 at 22 38 34" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/d51c2a0a-0d55-4baf-ab50-a813eb3f0512">
+
+<img width="295" alt="Screenshot 2024-05-06 at 22 39 41" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/e4476992-1240-403d-9805-5b26eebe9ec0">
 
 
 Proje 13 Etkinlik ve Bilet Satış Platformu
