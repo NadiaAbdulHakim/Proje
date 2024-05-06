@@ -1,6 +1,5 @@
 import sys
-import sqlite3
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QListWidget, QMessageBox, QComboBox
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox, QComboBox
 
 class BiletSatisPlatformu(QWidget):
     def __init__(self):
@@ -33,7 +32,7 @@ class BiletSatisPlatformu(QWidget):
         # Etkinlik
         self.etkinlik_ad_label = QLabel("Etkinlik:")
         self.etkinlik_ad_combobox = QComboBox()
-        self.etkinlik_ad_combobox.addItems(["Müzik" ,"Konser", "Festival"]) 
+        self.etkinlik_ad_combobox.addItems(["Konser", "Festival", "Opera"]) 
         layout.addWidget(self.etkinlik_ad_label)
         layout.addWidget(self.etkinlik_ad_combobox)
 
@@ -45,9 +44,16 @@ class BiletSatisPlatformu(QWidget):
 
         self.etkinlik_mekan_label = QLabel("Mekan:")
         self.etkinlik_mekan_combobox = QComboBox()
-        self.etkinlik_mekan_combobox.addItems(["Kültür Merkezi","Plaj Alanı"]) 
+        self.etkinlik_mekan_combobox.addItems(["Kültür Merkezi", "Plaj Alanı"]) 
         layout.addWidget(self.etkinlik_mekan_label)
         layout.addWidget(self.etkinlik_mekan_combobox)
+
+        # Ticket Type
+        self.ticket_type_label = QLabel("Bilet Türü:")
+        self.ticket_type_combobox = QComboBox()
+        self.ticket_type_combobox.addItems(["Normal Ayakta - 300 TL", "Sahne Önü - 750 TL", "VIP - 1500 TL"]) 
+        layout.addWidget(self.ticket_type_label)
+        layout.addWidget(self.ticket_type_combobox)
 
         self.ücret_label = QLabel("Ücret:")
         self.ücret_input = QLineEdit()
@@ -63,38 +69,8 @@ class BiletSatisPlatformu(QWidget):
         self.kullanici_bilet_al_button.clicked.connect(self.kullanici_bilet_al)
         layout.addWidget(self.kullanici_bilet_al_button)
 
-
     def veritabani_baglantisi_kur(self):
-        self.baglanti = sqlite3.connect('bilet_satis_platformu.db')
-        self.imlec = self.baglanti.cursor()
-        self.imlec.execute('''CREATE TABLE IF NOT EXISTS Etkinlikler
-                               (id INTEGER PRIMARY KEY,
-                                ad TEXT,
-                                tarih TEXT,
-                                mekan TEXT)''')
-        self.baglanti.commit()
-
-    def etkinlik_olustur(self):
-        etkinlik_ad = self.etkinlik_ad_input.text().strip()
-        etkinlik_tarih = self.etkinlik_tarih_input.text().strip()
-        etkinlik_mekan = self.etkinlik_mekan_input.text().strip()
-
-        if etkinlik_ad and etkinlik_tarih and etkinlik_mekan:
-            self.imlec.execute("INSERT INTO Etkinlikler (ad, tarih, mekan) VALUES (?, ?, ?)", (etkinlik_ad, etkinlik_tarih, etkinlik_mekan))
-            self.baglanti.commit()
-            self.etkinlik_listesi.addItem(f"{etkinlik_ad} - {etkinlik_tarih} - {etkinlik_mekan}")
-            QMessageBox.information(self, "Başarılı", "Etkinlik başarıyla oluşturuldu!")
-        else:
-            QMessageBox.warning(self, "Uyarı", "Lütfen tüm alanları doldurun.")
-
-    def bilet_sat(self):
-        bilet_numarasi = self.bilet_numarasi_input.text().strip()
-        bilet_etkinlik_bilgisi = self.bilet_etkinlik_bilgisi_input.text().strip()
-
-        if bilet_numarasi and bilet_etkinlik_bilgisi:
-            QMessageBox.information(self, "Başarılı", "Bilet satışı başarıyla gerçekleştirildi!")
-        else:
-            QMessageBox.warning(self, "Uyarı", "Lütfen tüm alanları doldurun.")
+        pass  # Veritabanı bağlantısı kurma işlemleri bu sınıfa özgü işlemlerdir.
 
     def kullanici_bilet_al(self):
         ad = self.ad_input.text().strip()
@@ -102,14 +78,50 @@ class BiletSatisPlatformu(QWidget):
         eposta = self.eposta_input.text().strip()
         bilet_numarasi = self.kullanici_bilgisi_input.text().strip()
 
+        ticket_type = self.ticket_type_combobox.currentText()
+        if ticket_type:
+            # Extracting the price from the ticket type string
+            price_str = ticket_type.split("-")[-1].strip()
+            # Removing "TL" and any extra spaces
+            price_str = price_str.replace("TL", "").strip()
+            try:
+                price = float(price_str)
+            except ValueError:
+                price = 0
+        else:
+            price = 0
+
         if ad and soyad and eposta and bilet_numarasi:
-            QMessageBox.information(self, "Başarılı", "Bilet alımı başarıyla gerçekleştirildi!")
+            # Set the calculated price to the ücret_input field
+            self.ücret_input.setText(str(price))
+            # Bilgileri yeni pencerede göster
+            self.bilet_bilgileri_penceresini_ac(ad, soyad, eposta, bilet_numarasi, price)
         else:
             QMessageBox.warning(self, "Uyarı", "Lütfen tüm alanları doldurun.")
 
-    def closeEvent(self, event):
-        self.baglanti.close()
-        event.accept()
+    def bilet_bilgileri_penceresini_ac(self, ad, soyad, eposta, bilet_numarasi, price):
+        # Yeni pencere oluştur
+        self.bilet_bilgileri_penceresi = BiletBilgileriPenceresi(ad, soyad, eposta, bilet_numarasi, price)
+        self.bilet_bilgileri_penceresi.show()
+
+class BiletBilgileriPenceresi(QWidget):
+    def __init__(self, ad, soyad, eposta, bilet_numarasi, price):
+        super().__init__()
+        self.setWindowTitle("Bilet Bilgileri")
+        self.setGeometry(200, 200, 300, 150)
+        self.ad_label = QLabel(f"Ad: {ad}")
+        self.soyad_label = QLabel(f"Soyad: {soyad}")
+        self.eposta_label = QLabel(f"E-Posta: {eposta}")
+        self.bilet_numarasi_label = QLabel(f"Bilet Numarası: {bilet_numarasi}")
+        self.price_label = QLabel(f"Ücret: {price} TL")
+
+        layout = QVBoxLayout()
+        layout.addWidget(self.ad_label)
+        layout.addWidget(self.soyad_label)
+        layout.addWidget(self.eposta_label)
+        layout.addWidget(self.bilet_numarasi_label)
+        layout.addWidget(self.price_label)
+        self.setLayout(layout)
 
 if __name__ == "__main__":
     uygulama = QApplication(sys.argv)
