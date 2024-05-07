@@ -54,7 +54,9 @@ Proje Oluşturma: Kullanıcılar proje adı, başlangıç ve bitiş tarihleri gi
 Çalışan Ekleme: Yöneticiler, projelerde çalışacak kişileri ad ve departman bilgileriyle sisteme ekleyebilirler.
 Görev Atama: Proje yöneticileri, her proje için belirli görevleri belirleyebilir ve bu görevlere sorumlu kişileri atayabilirler.
 
-<img width="290" alt="Screenshot 2024-05-04 at 23 44 03" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/f773f894-326e-4788-b9d6-0cfc12bc4ac2">
+<img width="289" alt="Screenshot 2024-05-08 at 00 12 34" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/4a90ec9b-2d30-4428-ae00-b7fa69ca110d">
+
+<img width="689" alt="Screenshot 2024-05-08 at 00 14 18" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/8883ccfc-6c88-48dd-938d-f9edc61cb4a1">
 
 
 Proje 15 Çevrimiçi Kitap Okuma ve Paylaşım Platformu
