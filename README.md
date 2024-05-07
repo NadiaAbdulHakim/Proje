@@ -7,7 +7,13 @@ Enstrüman Ekleme: Yeni enstrümanları dükkan envanterine eklemek için ad, st
 Satış Yapma: Müşterilere enstrümanlar satın alabilirsiniz. Satış için sipariş numarası ve satılan enstrümanı seçmeniz gerekmektedir.
 Destek Talebi Oluşturma: Müşterilerin yaşadığı sorunları ele almak için destek talepleri oluşturabilirsiniz. Her talep için bir talep numarası girmeniz gerekmektedir.
 
-<img width="345" alt="Screenshot 2024-05-04 at 23 39 25" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/d2e7bdbb-6270-4f84-b24f-c3ce71668c66">
+<img width="388" alt="Screenshot 2024-05-07 at 19 05 03" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/49cf2d46-cb35-4a30-b521-b74f1e103cf8">
+
+<img width="386" alt="Screenshot 2024-05-07 at 19 05 45" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/2b9638c0-9af6-40f5-a88f-6011e26b61d8">
+
+<img width="391" alt="Screenshot 2024-05-07 at 19 06 02" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/5333eace-6530-435e-af41-42c86fd9fd29">
+
+<img width="213" alt="Screenshot 2024-05-07 at 19 06 11" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/19f89c21-52e5-48da-86b2-573c99482940">
 
 
 Proje 12 Kişisel Sağlık Takip Uygulaması
