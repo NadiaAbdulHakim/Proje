@@ -59,7 +59,7 @@ Görev Atama: Proje yöneticileri, her proje için belirli görevleri belirleyeb
 <img width="689" alt="Screenshot 2024-05-08 at 00 14 18" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/8883ccfc-6c88-48dd-938d-f9edc61cb4a1">
 
 
-Proje 15 Çevrimiçi Kitap Okuma ve Paylaşım Platformu
+Proje 15 Kitap Uygulamasi
 
 Bu PyQt5 tabanlı uygulama, kitap okuma ve paylaşımını kolaylaştırmak için tasarlanmıştır. Kullanıcılar, kitapları ekleyebilir, yorumlar yapabilir ve platforma giriş yapabilirler.
 
@@ -68,7 +68,8 @@ Giriş Yapma: Kullanıcılar, belirli bir kullanıcı adı ve şifre ile platfor
 Kitap Ekleme: Kullanıcılar, kitap adı, yazarı ve yayınevi bilgilerini girerek yeni kitaplar ekleyebilirler.
 Yorum Ekleme: Kullanıcılar, platformdaki kitaplar için yorum yapabilirler.
 
-<img width="371" alt="Screenshot 2024-05-04 at 23 42 44" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/c49eb446-1c46-4747-a19c-000d788d47e8">
+<img width="593" alt="Screenshot 2024-05-08 at 14 48 17" src="https://github.com/NadiaAbdulHakim/Proje/assets/162308651/e17234f0-7e3e-48fd-a669-d47a6fecf628">
+
 
 Proje 1 Araç Kiralama Sistemi
 
